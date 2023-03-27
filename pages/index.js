@@ -26,6 +26,9 @@ export default function Home() {
             +31 (0)6 483 38 839
           </a>
         </div>
+        <div className={styles.titleContainer}>
+          <p className={styles.title}>New website incoming</p>
+        </div>
       </main>
     </>
   );

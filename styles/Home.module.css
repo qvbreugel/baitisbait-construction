@@ -3,13 +3,13 @@
   background-image: url("../public/bait-header.jpg");
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.35);
+  background-position-x: -610px;
   background-blend-mode: multiply;
 }
 
 .header {
   border-bottom: 1px solid #fff;
-  padding: 1em 2em;
-  display: flex;
+  padding: 1em 0;
 }
 .link {
   display: flex;
@@ -25,4 +25,58 @@
   height: 16px;
   margin-bottom: 2px;
   margin-right: 8px;
+}
+
+.titleContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+.title {
+  text-align: center;
+  font-size: 4em;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+@media only screen and (min-width: 600px) {
+  .main {
+    background-position-x: -400px;
+  }
+
+  .header {
+    padding: 1em;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .main {
+    background-position-x: -200px;
+  }
+
+  .header {
+    padding: 1em 2em;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .main {
+    background-position-x: 0;
+  }
+
+  .header {
+    padding: 1em 2em;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .main {
+    background-position-y: -200px;
+  }
 }
